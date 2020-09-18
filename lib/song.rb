@@ -36,6 +36,6 @@ end
     @@genres.each do |word|
     counts[word] += 1
   end
-  
+  counts
   end
 end
