@@ -31,10 +31,11 @@ end
   end
   
   def self.genre_count
-  
-    @@genres.each_with_object(@@genre_count={}) do |keys,values| 
-      @@genre_count[keys] = values.count 
+    counts = Hash.new 0
+
+    @@genres.each do |word|
+    counts[word] += 1
   end
-  return @@genre_count
-end
+  
+  end
 end
