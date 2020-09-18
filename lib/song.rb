@@ -38,4 +38,13 @@ end
   end
   counts
   end
+  
+  def self.artist_count
+    counts = Hash.new 0 
+
+    @@artists.each do |word|
+    counts[word] += 1
+  end
+  counts
+  end
 end
